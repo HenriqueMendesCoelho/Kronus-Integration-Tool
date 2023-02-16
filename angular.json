@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "integrationfrontend": {
+    "kronus-integration-adm": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/integrationfrontend",
+            "outputPath": "dist/kronus-integration-adm",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "integrationfrontend:build:production"
+              "browserTarget": "kronus-integration-adm:build:production"
             },
             "development": {
-              "browserTarget": "integrationfrontend:build:development"
+              "browserTarget": "kronus-integration-adm:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "integrationfrontend:build"
+            "browserTarget": "kronus-integration-adm:build"
           }
         },
         "test": {
