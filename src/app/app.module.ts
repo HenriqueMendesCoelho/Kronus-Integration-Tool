@@ -8,9 +8,14 @@ import { LoginComponent } from './components/login/login.component';
 import { LayoutWithoutNavbarComponent } from './components/layouts/layout-without-navbar/layout-without-navbar.component';
 import { LayoutWithNavbarComponent } from './components/layouts/layout-with-navbar/layout-with-navbar.component';
 
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+
 @NgModule({
   declarations: [AppComponent, LoginComponent, LayoutWithoutNavbarComponent, LayoutWithNavbarComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatButtonModule, MatInputModule, MatFormFieldModule, MatIconModule],
   providers: [],
   bootstrap: [AppComponent],
 })
